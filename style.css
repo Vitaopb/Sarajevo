@@ -11,6 +11,7 @@ body {
 
 .col-1 {
     background-image: url(/assets/backgrond-navbar1.png);
+    width: 100vw;
     height: 700px;
 }
 
@@ -20,11 +21,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
+.btn {
+    display: none;
+}
+
+.hamburguer {
+    display: none;
 }
 
 .col-1  ul {
-   
     display: flex;
     margin-right: 3rem;
     list-style: none;
@@ -41,8 +48,7 @@ body {
 .col-1 li a:hover {
     padding-top: 1rem;
     border-top:1px solid #4c76ff;
-    height: 20px;
-    
+    height: 20px; 
 }
 
 .col-1 p {
@@ -173,6 +179,12 @@ body {
     padding-right: .7rem;
 }
 
+.iphone img {
+    width: 100%;
+    margin-right: 4rem;
+ 
+}
+
 
 .blocks-texts p {
     height: 75px;
@@ -298,6 +310,7 @@ body {
   }
 
   .content:hover{
+    transition: all .4s ease-in-out;      
     opacity: .7;
     background-color: #4c76ff; 
     font-size:1.4rem;
@@ -319,34 +332,100 @@ body {
     padding-bottom: .5rem;
   }
 
+ .img-blur:hover {
+      filter: blur(5px);
+  }
+
   .tumb:hover .svg-eye {
+      position: fixed
+    transition: all .4s ease-in-out;      
     opacity:1;
     width: 10% ;
-    height: 10%;  
+    height: 10%;   
 }
 
 .pre-footer {
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     padding-bottom: 7rem;
+    width: 100%;
 }
 
 .img-footers {
-    margin-top: 7rem;
     text-align: center;
-    margin-right: 2.3rem ;
 }
 
 .img-footers h3 {
    margin: 0.5rem 0.5rem;
 }
-.img-footers img {
-    width: 300px;
-    height: 300px;
+
+
+.img-footers {
+    width: 18%; 
+    height: 18%;
 }
 
-.card-stati
+.img-footers img {
+    margin-top: 6rem;
+    width: 100%;
+    height: 100%;
+}
+
+.some-fun-facts {
+    filter: blur(3px);
+    background: url(/assets/imgs-footer/cidade-night.jpg);
+    height: 600px;
+    width: 100%;
+}
+
+
+@media (max-width: 700px) {
+    #btn {
+        display: flex;
+        position: relative;
+        background-color: #4c76ff;
+        width: 37px;
+        height: 35px;
+        border-radius: 15%;
+        right: 100%;
+        cursor: pointer;
+    }
+
+    .col-1 ul {
+        display: none;
+    }
+
+    .hamburguer {
+        border-radius: 25%;
+        background-color: white;
+        display: block;
+        width: 14px;
+        height: 2px;
+        position: relative;
+        top: 46%;
+        left: 33%;
+    }
+    }
+
+    .hamburguer::before, .hamburguer::after {
+        border-radius: 25%;
+        background-color: white;
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+    }
+
+    .hamburguer::after {
+        bottom: -10px;
+    }
+
+    .hamburguer::before {
+        top: -10px;
+    }
+}
 
   ::-webkit-scrollbar {
       display: none;
