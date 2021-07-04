@@ -5,4 +5,6 @@ function toggleMneu() {
     navLinks.classList.toggle('active')
 }
 
+const bs =
+
 btnMenu.addEventListener('click', toggleMneu);
