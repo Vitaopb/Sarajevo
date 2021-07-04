@@ -13,6 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100&family=Open+Sans+Condensed:wght@300&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/media-queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,38 +22,24 @@
 
 <body>
 
-    <nav class="col-1">
+    <nav class="col-1" id="home">
         <!--Header e background inicial-->
 
         <header>
-            <div>
+            <div id="home">
                 <p><strong>sarajevo<span class="c-blue">.</span></strong></p>
             </div>
             <nav id="nav-links">
-                <di id="btn">
+                <div id="btn">
                     <span class="hamburguer"></span>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#">Home</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Features</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Works</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Team</a>
-                        </li>
-
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#works">Works</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
         </header>
         <div class="texts-logos">
@@ -74,7 +61,7 @@
         </div>
     </nav>
 
-    <section class="features">
+    <section id="features">
         <nav>
             <div class="text-blue">
                 <h2 style="padding-bottom: 1.5rem;">FEATURES</h2>
@@ -120,7 +107,7 @@
         </p>
     </div>
 
-    <section class="col-3">
+    <section id="col-3">
 
         <nav style="margin-left: 2.5rem;">
             <div class="col-text">
@@ -204,7 +191,7 @@
         </nav>
     </section>
 
-    <section class="works">
+    <section id="works">
         <div class="text-blue">
             <h2 style="padding-bottom: 1.5rem;">WORKS</h2>
             <div class="container-svg">
@@ -213,7 +200,6 @@
                 <div class="barras-laterais-svg"></div>
             </div>
         </div>
-
 
         <div class="col-p">
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
@@ -368,7 +354,7 @@
             </div>
         </div>
 
-        <section class="meet-our-team">
+        <section id="team">
             <div class="text-blue">
                 <h2 style="padding-bottom: 1.5rem;">MEET OUR TEAM</h2>
                 <div class="container-svg">
@@ -383,26 +369,31 @@
                     totam rem aperiam, eaque ipsa quae ab illo inventore</p>
             </div>
 
-            <div class="pre-footer">
-                <div class="img-footers">
-                    <img src="/assets/imgs-footer/homem-1.jpg" alt="">
-                    <h3>Joe Manga solta</h3>
-                    <p>Developer</p>
+            <div class="profile-card">
+                <div class="card-image">
+                    <span class="front">
+                        <img src="/assets/imgs-footer/homem-1.jpg" alt="">
+                        <h3>Joe Manga solta</h3>
+                        <p>Developer</p>
+                    </span>
+                    <span class="back">
+
+                    </span>
                 </div>
 
-                <div class="img-footers">
+                <div class="card-image">
                     <img src="/assets/imgs-footer/woman-1.jpg" alt="">
                     <h3>Joe Manga solta</h3>
                     <p>Developer</p>
                 </div>
 
-                <div class="img-footers">
+                <div class="card-image">
                     <img src="/assets/imgs-footer/homem-2.png" alt="">
                     <h3>Joe Manga solta</h3>
                     <p>Developer</p>
                 </div>
 
-                <div class="img-footers">
+                <div class="card-image">
                     <img src="/assets/imgs-footer/woman-2.jpeg" alt="">
                     <h3>Joe Manga solta</h3>
                     <p>Developer</p>
@@ -410,8 +401,8 @@
             </div>
         </section>
 
-        <section class="some-fun-facts">
-        
+        <section id="some-fun-facts">
+
             <div class="text-blue">
                 <h2 style="padding-bottom: 1.5rem;">SOME FUN FACTS</h2>
                 <div class="container-svg">
@@ -420,26 +411,123 @@
                     <div class="barras-laterais-svg"></div>
                 </div>
             </div>
-
+            <div class="card-pai">
             <div class="card">
-
+                <i class="fas fa-clock"></i>
+                <p>3200</p>
+                <p>HOURS OF WORK</p>
             </div>
 
             <div class="card">
-
+                <i class="fas fa-user"></i>
+                <p>120</p>
+                <p>SATISHILD CUNETS</p>
             </div>
 
             <div class="card">
-
+                <i class="fas fa-rocket"></i>
+                <p>360</p>
+                <p>PROJECTS DELIVERS</p>
             </div>
 
             <div class="card">
-
+                <i class="fas fa-trophy"></i>
+                <p>42</p>
+                <p>AWARDS WUN</p>
+            </div>
             </div>
         </section>
 
-        <script src="/main.js"></script>
+        <section id="contact">
+            <div class="text-blue">
+                <h2 style="padding-bottom: 1.5rem;">LET'S DISCUSS</h2>
+                <div class="container-svg">
+                    <div class="barras-laterais-svg"></div>
+                    <i class="far fa-heart icon"></i>
+                    <div class="barras-laterais-svg"></div>
+                </div>
+            </div>
+            <div class="col-p">
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+            </div>
+            <div class="info">
+            <div class="dados">
+                <h3>Sed ut perspiciatis unde omnis!</h3>
+                <p>
+                    2345 Setwant natrer, 1234,
+                    Washington, United States.
+                    (401) 1234 678
+                    hello@brandi.com
+                    www.brandi.com
+                </p>
+            </div>
 
+            
+                <div class="message">
+                    <h3>Say hello!</h3>
+                    <div class="inputs">
+                        <input type="text" placeholder="Name">
+                        <input style="margin-right: 0;" type="text" placeholder="Email">
+                    </div>
+                    <input type="text" placeholder="Menssage">
+                    <p><i class="fas fa-envelope"></i> Send message</p>
+                </div>
+                <div class="social">
+                    <i class="fab fa-github-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fas fa-basketball-ball"></i>
+                </div>
+            </div>
+            <div class="maps"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15788.110959787258!2d-35.071849650000004!3d-8.39893215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1625266381618!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+        </section>
+
+        <script src="/main.js"></script>
+        <script src="https://kit.fontawesome.com/0e889db0a2.js" crossorigin="anonymous"></script>
+
+        <footer class="footer">
+            <div class="text-primary">
+                <h2><strong>sarajevo<span class="c-blue">.</span></strong></h2>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore 
+                    perspiciatis unde omnis iste.
+                </p>
+            </div>
+
+            <div class="subscribe">
+                <h4>Subscribe</h4>
+                <div class="search">
+                    <input type="text" class=""/>
+                    <button class="setinha"><i class="fas fa-arrow-right"></i></button>
+                  </div>
+                  
+                <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+            </div>
+
+            <div class="explore">
+                <h4>Explore</h4>
+                <div class="companies">
+                    <ul>
+                        <li>Envato</li>
+                        <li>Themecurve</li>
+                        <li>Kreativeshowcase</li>
+                        <li>Freebiecurve</li>
+                    </ul>
+                    <ul>
+                        <li>Themeforest</li>
+                        <li>Microsoft</li>
+                        <li>Google</li>
+                        <li>Yahoo</li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+        
 </body>
 
 
